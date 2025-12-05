@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kávová etiketa ve světě</title>
+        <link rel="stylesheet" href="../src/styles.css">
+    </head>
+    <body>
+        <header class="nav-container">
+            <div class="nav h-full flex justify-between items-center py-4 px-7">
+                <a href="../index.html" class="nav__logo">
+                    <img src="../img/logo.PNG" alt="logo café Provence">
+                </a>
+                <button id="nav-toggle" class="nav__hamburger block p-4 pointer" aria-label="Otevřít menu">
+                    <span class="hamburger__icon">☰</span>
+                </button>
+                <nav id="nav-menu" class="nav__menu">
+                    <div class="w-full text-right p-4 md-hidden">
+                        <button id="nav-close" class="nav__close pointer">
+                            <span class="close__icon">✕</span>
+                        </button>
+                    </div>
+                    <ul class="nav__links w-full flex flex-col md-flex-row items-center gap-4 list-none md-gap-6">
+                        <li><a href="../index.html">DOMŮ</a></li>
+                        <li><a href="../menu.html">MENU</a></li>
+                        <li><a href="../blog.html">BLOG</a></li>
+                        <li><a href="../contact.html">KONTAKT</a></li>
+                        <li><a href="tel:+420xxxxxxxxx" class="btn btn--nav">REZERVACE</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="post center flex-col gap-3">
+                <div class="container container--narrow">
+                    <header class="post__header mb-7 mt-7">
+                        <h1 class="post__title mb-3">☕️ Kávová etiketa ve světě: Jak pít kávu v Itálii, Turecku a Skandinávii</h1>
+                        <div class="post__meta flex gap-4">
+                            <span>17. listopadu 2025</span>
+                            <span>Jana Nováková</span>
+                    </div>
+                    </header>
+
+                    <div class="w-full">
+                        <img src="../img/etiketa-italie.png" alt="Sběr kávy" class="post__img h-auto w-full">
+                    </div>
+
+                    <div class="post__content">
+                        <h2 class="post__subtitle mt-3 mb-3">Úvod</h2>
+                        <p class="mb-4">
+                            Káva je globální fenomén, ale její konzumace je pevně svázána s místní kulturou a etiketou. 
+                            To, jak kávu pijete, může v cizí zemi odhalit, zda jste turista, nebo zda rozumíte místním 
+                            zvyklostem. Kávový rituál je v každém regionu jedinečný.
+                        </p>
+
+                        <h2 class="post__subtitle mb-3">Itálie: Rychlost, pravidla a al banco</h2>
+                        <p class="mb-4">
+                            Itálie je kolébkou espressa a místem, kde se pije káva s největším respektem k tradici. 
+                            Espresso se pije rychle, ve stoje u baru (al banco), kde je také levnější než u stolu. 
+                            Kávu si objednáte jednoduše jako "un caffè". Nejdůležitější pravidlo se týká mléčné kávy: 
+                            pít cappuccino nebo latté po 11. hodině dopoledne je považováno za faux pas, protože 
+                            Italové věří, že mléko zpomaluje trávení, a proto je to výhradně snídaňový nápoj.
+                        </p>
+                        <h2 class="post__subtitle mb-3">Turecko: Tradice, lógr a věštění</h2>
+                        <p class="mb-4">
+                            Turecká káva (Türk Kahvesi) se vaří v tradiční konvičce džezvě (cezve) společně s cukrem. 
+                            Při objednávání musíte předem uvést požadovanou sladkost (od nesladké po hodně sladkou). 
+                            Káva se servíruje s lógrem a šálkem vody, přičemž voda se pije před kávou k očištění 
+                            chuťových pohárků. Káva se nikdy nedopíjí až do dna, aby lógr zůstal v šálku. 
+                            Kávová sedlina se totiž často používá k věštění budoucnosti – šálek se překlopí a obrazce 
+                            se interpretují.
+                        </p>
+                        <h2 class="post__subtitle mb-3">Skandinávie: Fika a nekonečná filtrace</h2>
+                        <p class="mb-4">
+                            Skandinávie, včetně Švédska a Finska, patří mezi světovou špičku ve spotřebě kávy. 
+                            Zde je káva především společenský rituál a synonymum pro pohodu (Hygge). 
+                            Ve Švédsku je káva ústředním bodem Fiky, což je povinná pauza pro setkání a sdílení s 
+                            rodinou či kolegy, doprovázená pečivem. Skandinávci preferují světle praženou, 
+                            filtrovanou kávu, které vypijí velké množství. Mléko a cukr jsou méně časté, 
+                            protože se dává přednost čisté, černé chuti.
+                        </p>
+                        <h2 class="post__subtitle mb-3">Shrnutí</h2>
+                        <p class="mb-4">
+                            Zatímco v Itálii je káva rychlost a mléčná tabu, v Turecku je rituál a ve 
+                            Skandinávii symbolem pomalého společenského života. Nejlepší radou je vždy 
+                            pozorovat a respektovat místní zvyklosti.
+                        </p>
+                    </div>
+                    <blockquote class="post__citation mb-4">
+                        Obsah vytvořen modelem Gemini (Google).
+                    </blockquote>
+                    <div class="text-right">
+                        <a href="../blog.html" class="btn btn--outline">Zpět na blog</a>
+                    </div>
+                    
+                </div>
+            </section>
+        </main>
+        <footer class="footer center flex-col text-center gap-4 p-6">
+            <div class="footer__content">
+                <p>&copy; 2025 Kafé Provence</p>
+                <a href="mailto:kafeProvence@gmail.com" class="footer__href">
+                    <p>Email: kafeprovence@gmail.com</p>
+                </a>
+            </div>
+            <div class="footer__disclaimer p-4">
+                <p><strong>⚠️ Tento web byl vytvořen jako studentský zápočtový projekt, veškerý obsah je smyšlený. ⚠️</strong></p>
+                <br><span class="resources">Textové podklady a grafický obsah byly vygenerovány pomocí umělé inteligence (Google Gemini).</span>
+            </div>
+        </footer>
+        <script src="../script.js"></script>
+    </body>
+</html>

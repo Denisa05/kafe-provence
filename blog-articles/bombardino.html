@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jak připravit pravé Bombardino</title>
+        <link rel="stylesheet" href="../src/styles.css">
+    </head>
+    <body>
+        <header class="nav-container">
+            <div class="nav h-full flex justify-between items-center py-4 px-7">
+                <a href="../index.html" class="nav__logo">
+                    <img src="../img/logo.PNG" alt="logo café Provence">
+                </a>
+                <button id="nav-toggle" class="nav__hamburger block p-4 pointer" aria-label="Otevřít menu">
+                    <span class="hamburger__icon">☰</span>
+                </button>
+                <nav id="nav-menu" class="nav__menu">
+                    <div class="w-full text-right p-4 md-hidden">
+                        <button id="nav-close" class="nav__close pointer">
+                            <span class="close__icon">✕</span>
+                        </button>
+                    </div>
+                    <ul class="nav__links w-full flex flex-col md-flex-row items-center gap-4 list-none md-gap-6">
+                        <li><a href="../index.html">DOMŮ</a></li>
+                        <li><a href="../menu.html">MENU</a></li>
+                        <li><a href="../blog.html">BLOG</a></li>
+                        <li><a href="../contact.html">KONTAKT</a></li>
+                        <li><a href="tel:+420xxxxxxxxx" class="btn btn--nav">REZERVACE</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="post center gap-3">
+                <div class="container container--narrow">
+                    <header class="post__header mb-7 mt-7">
+                        <h1 class="post__title mb-3">☕️ Hřejivá legenda ze sjezdovek: Jak připravit pravé Bombardino</h1>
+                        <div class="post__meta flex gap-4">
+                            <span>17. listopadu 2025</span>
+                            <span>Jana Nováková</span>
+                    </div>
+                    </header>
+
+                    <div class="w-full">
+                        <img src="../img/bombardino.png" alt="Sběr kávy" class="post__img h-auto w-full">
+                    </div>
+
+                    <div class="post__content">
+                        <h2 class="post__subtitle mt-3 mb-3">Úvod</h2>
+                        <p class="mb-4">
+                            Bombardino je ikonický italský zimní nápoj, který se stal neodmyslitelnou součástí 
+                            atmosféry alpských lyžařských středisek. Jeho název, v překladu „malá bomba“, 
+                            dokonale vystihuje jeho hřejivý a energický účinek. Základ Bombardina tvoří vaječný 
+                            likér a brandy, doplněné bohatou vrstvou šlehačky.
+                        </p>
+
+                        <h2 class="post__subtitle mb-3">Ingredience a příprava</h2>
+                        <p class="mb-4">
+                            Pro Bombardino budete potřebovat čtyři klíčové složky: vaječný likér (tradičně Vov nebo Advocaat) 
+                            v množství 80–100 ml na porci a brandy (nebo rum) v množství 10–20 ml. 
+                            Poměr brandy lze samozřejmě upravit dle chuti. Dále je nezbytná čerstvá šlehačka a na posypání 
+                            kakao nebo skořice.
+                        </p>
+                        <p class="mb-4">
+                            Příprava spočívá v jednoduchém zahřátí ingrediencí. V menším kastrůlku smíchejte odměřené množství vaječného 
+                            likéru a brandy. Směs pomalu zahřívejte na nízkém plameni za stálého míchání. 
+                            Klíčové je nápoj pouze prohřát, nikdy ho nesmíte přivést k varu, protože by se 
+                            vaječný likér srazil a znehodnotil. Jakmile je směs horká, ihned ji nalijte do 
+                            menší sklenice s uchem.
+                        </p>
+                        <h2 class="post__subtitle mb-3">Finální doteky a variace</h2>
+                        <p class="mb-4">
+                            Perfektní Bombardino zakončíte vysokou a pevnou čepicí z čerstvé šlehačky, která by měla být neslazená, 
+                            aby kontrastovala se sladkostí likéru. Vrch šlehačky velkoryse posypte kakaem nebo skořicí. 
+                            Pro ty, kteří chtějí nápoji dodat kávový říz, existuje oblíbená variace (někdy nazývaná Calimero). 
+                            V takovém případě do horkého základu přidáte jednu čerstvě připravenou dávku espressa (30–40 ml), 
+                            která se postará o příjemnou hořkost.
+                        </p>
+                        <h2 class="post__subtitle mb-3">Shrnutí</h2>
+                        <p class="mb-4">
+                            Příprava Bombardina je rychlá a přinese kousek italské zimní pohody. Nejdůležitějšími body 
+                            jsou kvalita vaječného likéru, jemný ohřev bez varu a použití čerstvé šlehačky.
+                        </p>
+                    </div>
+                    <blockquote class="post__citation mb-4">
+                        Obsah vytvořen modelem Gemini (Google).
+                    </blockquote>
+                    <div class=" text-right">
+                        <a href="../blog.html" class="btn btn--outline">Zpět na blog</a>
+                    </div>
+                    
+                </div>
+            </section>
+        </main>
+        <footer class="footer center flex-col text-center gap-4 p-6">
+            <div class="footer__content">
+                <p>&copy; 2025 Kafé Provence</p>
+                <a href="mailto:kafeProvence@gmail.com" class="footer__href">
+                    <p>Email: kafeprovence@gmail.com</p>
+                </a>
+            </div>
+            <div class="footer__disclaimer p-4">
+                <p><strong>⚠️ Tento web byl vytvořen jako studentský zápočtový projekt, veškerý obsah je smyšlený. ⚠️</strong></p>
+                <br><span class="resources">Textové podklady a grafický obsah byly vygenerovány pomocí umělé inteligence (Google Gemini).</span>
+            </div>
+        </footer>
+        <script src="../script.js"></script>
+    </body>
+</html>

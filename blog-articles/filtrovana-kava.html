@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dokonalá filtrovaná káva doma </title>
+        <link rel="stylesheet" href="../src/styles.css">
+    </head>
+    <body>
+        <header class="nav-container">
+            <div class="nav h-full flex justify-between items-center py-4 px-7">
+                <a href="../index.html" class="nav__logo">
+                    <img src="../img/logo.PNG" alt="logo café Provence">
+                </a>
+                <button id="nav-toggle" class="nav__hamburger block p-4 pointer" aria-label="Otevřít menu">
+                    <span class="hamburger__icon">☰</span>
+                </button>
+                <nav id="nav-menu" class="nav__menu">
+                    <div class="w-full text-right p-4 md-hidden">
+                        <button id="nav-close" class="nav__close pointer">
+                            <span class="close__icon">✕</span>
+                        </button>
+                    </div>
+                    <ul class="nav__links w-full flex flex-col md-flex-row items-center gap-4 list-none md-gap-6">
+                        <li><a href="../index.html">DOMŮ</a></li>
+                        <li><a href="../menu.html">MENU</a></li>
+                        <li><a href="../blog.html">BLOG</a></li>
+                        <li><a href="../contact.html">KONTAKT</a></li>
+                        <li><a href="tel:+420xxxxxxxxx" class="btn btn--nav">REZERVACE</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="post center gap-3">
+                <div class="container container--narrow">
+                    <header class="post__header mb-7 mt-7">
+                        <h1 class="post__title mb-3">☕️ Jak na dokonalou filtrovanou kávu doma: Průvodce V60/Chemex</h1>
+                        <div class="post__meta flex gap-4">
+                            <span>17. listopadu 2025</span>
+                            <span>Jana Nováková</span>
+                    </div>
+                    </header>
+
+                    <div class="w-full">
+                        <img src="../img/filtrovana-kava.png" alt="Sběr kávy" class="post__img h-auto w-full">
+                    </div>
+
+                    <div class="post__content">
+                        <h2 class="post__subtitle mt-3 mb-3">Úvod</h2>
+                        <p class="mb-4">
+                            Filtrovaná káva zažívá renesanci, protože jejím cílem je
+                            dosáhnout čistoty, jemnosti a plného chuťového profilu zrn.
+                            Je to metoda, která nejlépe zvýrazní ovocné a květinové tóny 
+                            jednodruhových káv. Proces je minimalistický, ale vyžaduje
+                            přesné pochopení poměrů a techniky zalévání.
+                        </p>
+
+                        <h2 class="post__subtitle mb-3">Základní pilíře a poměry</h2>
+                        <p class="mb-4">
+                            Kvalita nápoje stojí na třech pilířích: filtrované vodě o teplotě 92 °C 
+                            až 96 °C, mletí kávy, které je střední až středně hrubé (jako hrubá sůl), 
+                            a dodržení Zlatého poměru. Pokud je mletí moc jemné, káva bude hořká a přeextrahovaná, 
+                            pokud moc hrubé, bude kyselá a podextrahovaná. Nejčastěji se používá poměr 1:15 nebo 
+                            1:16, což znamená, že na 30 gramů kávy použijete 450 až 480 ml vody.
+                        </p>
+                        <h2 class="post__subtitle mb-3">Postup přípravy metodou Pour-over</h2>
+                        <p class="mb-4">
+                            Začněte přípravou papírového filtru, který vložíte do dripperu a 
+                            důkladně propláchnete horkou vodou. Tím odstraníte papírovou pachuť a 
+                            předehřejete nádobu. Následně nasypte namletou kávu do filtru a začněte s 
+                            Bloomingem (předspařením). Zalijte kávu malým množstvím horké vody 
+                            (cca 2–3 násobek hmotnosti kávy) a počkejte 30 sekund – v této fázi 
+                            uniká CO2 a káva "kvete". Po uplynutí 30 sekund pokračujte v zalévání vody pomalu a 
+                            krouživými pohyby, pohybujte se od středu ke kraji, ale snažte se vyhnout přímému 
+                            zalévání papírového filtru. Vodu byste měli dolít ve 2–3 krocích. Poslední
+                             vodu nalijte zhruba v čase 1:30 minuty a celková extrakce by měla skončit
+                              mezi 2:30 až 3:30 minuty.
+                        </p>
+                        <h2 class="post__subtitle mb-3">Shrnutí</h2>
+                        <p class="mb-4">
+                            Filtrovaná káva je o přesnosti vážení, konzistentním mletí a dodržení
+                            správného času extrakce. Nejobvyklejšími chybami jsou vynechání předspaření 
+                            (Bloomingu) nebo příliš rychlé zalévání okrajů filtru, což vede k nerovnoměrné extrakci a horší chuti.
+                        </p>
+                    </div>
+                    <blockquote class="post__citation mb-4">
+                        Obsah vytvořen modelem Gemini (Google).
+                    </blockquote>
+                    <div class="text-right">
+                        <a href="../blog.html" class="btn btn--outline">Zpět na blog</a>
+                    </div>
+                    
+                </div>
+            </section>
+        </main>
+        <footer class="footer center flex-col text-center gap-4 p-6">
+            <div class="footer__content">
+                <p>&copy; 2025 Kafé Provence</p>
+                <a href="mailto:kafeProvence@gmail.com" class="footer__href">
+                    <p>Email: kafeprovence@gmail.com</p>
+                </a>
+            </div>
+            <div class="footer__disclaimer p-4">
+                <p><strong>⚠️ Tento web byl vytvořen jako studentský zápočtový projekt, veškerý obsah je smyšlený. ⚠️</strong></p>
+                <br><span class="resources">Textové podklady a grafický obsah byly vygenerovány pomocí umělé inteligence (Google Gemini).</span>
+            </div>
+        </footer>
+        <script src="../script.js"></script>
+    </body>
+</html>

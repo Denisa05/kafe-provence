@@ -1,0 +1,90 @@
+@layer base {
+    :root {
+     /********************************************************************/
+        /* typographic scale */
+        --style-size-3xl: 2.027rem;     
+        --style-size-2xl: 1.802rem;  
+        --style-size-xl:  1.602rem;  
+        --style-size-l:   1.424rem;  
+        --style-size-m:   1.266rem;  
+        --style-size-s:   1.125rem;  
+        --style-size-xs:  1rem;      /* base (16px) */
+        --style-size-2xs: 0.889rem;  
+        --style-size-3xs: 0.790rem;
+
+        --font-size-base: var(--style-size-xs);
+        --font-size-body: var(--font-size-base);
+        
+        /* font */
+        --font-heading: 'Kodchasan', sans-serif;
+        --font-body: 'Lato', sans-serif;
+
+        /* font weight */
+        --weight-normal: 400;
+        --weight-bold: 500;
+        --weight-extra-bold: 600;
+        --weight-base: var(--weight-normal);
+
+        /* spacing scale */
+        --space-8: 3rem;
+        --space-7: 2.5rem;
+        --space-6: 2rem;
+        --space-5: 1.5rem;
+        --space-4: 1rem;
+        --space-3: 0.75rem;
+        --space-2: 0.5rem;
+        --space-1: 0.25rem;
+        --space-0: 0;
+        /* grid-unit */
+        --grid-unit: 0.5rem ;
+
+        /*radius*/
+        --radius-full: 100px;
+        --radius-medium: 16px;
+        
+        /* color palete */
+        --color-primary: #3C2F25;
+        --color-primary-text: #ffffff;
+
+        --color-secondary: #ffedd0;
+        --color-secondary-text: #3C2F25;
+
+        --color-tertiary:  #F9F5EF;
+
+        --color-bg: #fff7ea;
+        --color-bg-light: #ffffff;
+
+        --color-text: #3C2F25;
+        --color-text-muted: #756F68;
+
+        --color-visited: #ce8634;
+    }
+    /* *********************************************************************** */
+    html {
+        font-family: var(--font-body);
+        color: var(--color-text);
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        font-size: var(--font-size-body);
+        font-weight: var(--weight-normal);
+        background-color: var(--color-bg);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: var(--weight-extra-bold);
+        line-height: 1.2;
+        font-family: var(--font-heading);
+    }
+    h1 {font-size: var(--style-size-3xl);}
+    h2 {font-size: var(--style-size-2xl);}
+    h3 {font-size: var(--style-size-xl);}
+    h4 {font-size: var(--style-size-l);}
+    h5 {font-size: var(--style-size-m);}
+    h6 {font-size: var(--style-size-s);}
+
+    p {font-size: var(--font-size-body);}
+    a {text-decoration: none;}
+    ul, ol { margin: 0; padding: 0;}
+}
