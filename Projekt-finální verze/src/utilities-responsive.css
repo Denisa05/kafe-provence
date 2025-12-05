@@ -1,0 +1,68 @@
+@layer utilities-responsive {
+    @media (min-width: 768px) {
+        :root{
+        /* typographic scale */
+        --style-size-3xl: 3.815rem;
+        --style-size-2xl: 3.052rem;
+        --style-size-xl: 2.441rem;
+        --style-size-l: 1.953rem;
+        --style-size-m: 1.563rem;
+        --style-size-s: 1.25rem;
+        --style-size-xs: 1rem;
+        --style-size-2xs: 0.8rem;
+        --style-size-3xs: 0.64rem;
+
+        /* spacing scale */
+        --space-8: 4rem;
+        --space-7: 3rem;
+        --space-6: 2rem;
+        }
+
+    /********************************************************************/
+        /* container - md */   
+        .container--menu {
+            max-width: calc(var(--grid-unit) * 87.5);
+        }
+
+    /********************************************************************/
+        /* layout - md */
+        .md-flex {display: flex;}
+        .md-flex-row {flex-direction: row;}
+        .md-flex-1 {flex: 1;}
+        .md-flex-2 {flex: 2;}
+
+        .md-items-stretch {align-items: stretch;}
+        .md-items-center {align-items: center;}
+        
+        .md-justify-end {justify-content: flex-end;}
+        .md-justify-center {justify-content: center;}
+        
+        .md-hidden {display: none;}
+        .md-displayed {display: block;}
+
+        .md-grid-cols-2 {grid-template-columns: repeat(2, 1fr);}
+
+        .md-w-full {width: 100%;}
+        .md-h-full {height: 100%;}
+
+    /********************************************************************/
+        /* gaps - md */
+        .md-gap-7 {gap: var(--space-7);}
+        .md-gap-6 {gap: var(--space-6);}
+    }
+
+    @media (min-width: 1200px) {
+
+    /********************************************************************/
+        /* container - lg */   
+        .container--menu{
+            max-width: calc(var(--grid-unit) * 137.5);
+            width: 100%;
+        }
+        
+    /********************************************************************/
+        /* layout - lg */
+        .lg-grid-cols-2 {grid-template-columns: repeat(2, 1fr);}
+        .lg-grid-cols-3 {grid-template-columns: repeat(3, 1fr);}
+    }
+}

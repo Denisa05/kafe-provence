@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kavárna Provence - Kontakt</title>
+        <link rel="stylesheet" href="src/styles.css">
+    </head>
+    <body>
+        <header class="nav-container">
+            <div class="nav h-full flex justify-between items-center py-4 px-7">
+                <a href="index.html" class="nav__logo">
+                    <img src="img/logo.PNG" alt="logo café Provence">
+                </a>
+                <button id="nav-toggle" class="nav__hamburger block p-4 pointer" aria-label="Otevřít menu">
+                    <span class="hamburger__icon">☰</span>
+                </button>
+                <nav id="nav-menu" class="nav__menu">
+                    <div class="w-full text-right p-4 md-hidden">
+                        <button id="nav-close" class="nav__close pointer">
+                            <span class="close__icon">✕</span>
+                        </button>
+                    </div>
+                    <ul class="nav__links w-full flex flex-col md-flex-row items-center gap-4 list-none md-gap-6">
+                        <li><a href="index.html">DOMŮ</a></li>
+                        <li><a href="menu.html">MENU</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">KONTAKT</a></li>
+                        <li><a href="tel:+xxxxxxxxx" class="btn btn--nav">REZERVACE</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+        <section class="center flex-col bg-primary" id="kontakt">
+                <div class="container">
+                    <h2 class="section__title text-center mb-7">Kontakt</h2>
+                    <div class="flex flex-col gap-5 md-flex-row">
+                        <div class="split-content__content flex flex-col gap-4 items-start md-flex-1">
+                            <h3>📍Kde nás najdete?</h3>
+                            <p> Pernštýnské náměstí 452,<br>
+                                530 02 Pardubice</p>
+
+                            <h3>Otevírací doba</h3>
+                            <p>Po – Pá: 8:00 – 20:00<br>
+                                So – Ne: 9:00 – 18:00</p>
+
+                            <h3>Zavolejte nám</h3>
+                            <p>Chcete rezervovat stůl? Stačí zavolat.</p>
+
+                            <a href="tel:+420xxxxxxxxx" class="btn btn--outline">📞 +420 xxx xxx xxx</a>
+
+                            <h3>Napište nám</h3>
+                            <a href="mailto:kafeProvence@gmail.com" class="btn btn--outline">
+                                <p>📧 kafeprovence@gmail.com</p>
+                            </a>
+                        </div>
+                        <div class="split-content__media w-full md-flex md-flex-1 mb-4">
+                            <a href="https://maps.app.goo.gl/SmgseyoUboLJqHfd7">
+                                <img class="map split-content__img w-full" src="img/mapa.png" alt="Náš tým">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        
+        </main>
+        <footer class="footer center flex-col text-center gap-4 p-6">
+            <div class="footer__content">
+                <p>&copy; 2025 Kafé Provence</p>
+                <a href="mailto:kafeProvence@gmail.com" class="footer__href">
+                    <p>Email: kafeprovence@gmail.com</p>
+                </a>
+            </div>
+            <div class="footer__disclaimer p-4">
+                <p><strong>⚠️ Tento web byl vytvořen jako studentský zápočtový projekt, veškerý obsah je smyšlený. ⚠️</strong></p>
+                <br><span class="resources">Textové podklady a grafický obsah byly vygenerovány pomocí umělé inteligence (Google Gemini).</span>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

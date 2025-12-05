@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <title>Kavárna Provence - Domů</title>
+        <link rel="stylesheet" href="src/styles.css">
+    </head>
+    <body>
+       <header class="nav-container">
+            <div class="nav h-full flex justify-between items-center py-4 px-7">
+                <a href="index.html" class="nav__logo">
+                    <img src="img/logo.PNG" alt="logo café Provence">
+                </a>
+                <button id="nav-toggle" class="nav__hamburger block p-4 pointer" aria-label="Otevřít menu">
+                    <span class="hamburger__icon">☰</span>
+                </button>
+                <nav id="nav-menu" class="nav__menu">
+                    <div class="w-full text-right p-4 md-hidden">
+                        <button id="nav-close" class="nav__close pointer">
+                            <span class="close__icon">✕</span>
+                        </button>
+                    </div>
+                    <ul class="nav__links w-full flex flex-col md-flex-row items-center gap-4 list-none md-gap-6 w-full">
+                        <li><a href="index.html">DOMŮ</a></li>
+                        <li><a href="menu.html">MENU</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">KONTAKT</a></li>
+                        <li><a href="tel:+420xxxxxxxxx" class="btn btn--nav">REZERVACE</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="hero w-full relative">
+                <div class="hero__overlay center absolute w-full h-full">
+                    <div class="hero__content center flex-col gap-5 text-center">
+                        <h1 class="hero__title">KAFÉ PROVENCE</h1>
+                        <p class="hero__subtitle u-gap-xl">Místo pro milovníky kávy v centru Pardubic</p>
+                        <a href="tel:+420xxxxxxxxx" class="btn btn--big">Rezervujte si stůl</a>
+                    </div>
+                </div>    
+            </section>
+            <section class="center flex-col bg-primary">
+                <div class="container">
+
+                    <div class="flex flex-col gap-5 md-flex-row">
+                        <div class="split-content__media w-full md-flex md-flex-1 mb-4">
+                            <img class="split-content__img w-full" src="img/about.png" alt="Náš tým">
+                        </div>
+                        <div class="split-content__content flex flex-col gap-4 items-start md-flex-1">
+                            <h2>Naše filozofie</h2> 
+                            <p>Věříme, že káva si zaslouží respekt a pozornost. 
+                                Proto je naší misí nabídnout vám víc než jen nápoj – 
+                                nabízíme útočiště, kde se čas zpomalí. Zakládáme si na 
+                                absolutní kvalitě: od etického výběru zrn z lokálních pražíren
+                                až po precizní techniku extrakce. Náš tým tvoří zapálení
+                                baristé, pro které je příprava kávy denní rituál. Chceme,
+                                aby každá návštěva u nás byla momentem skutečné pohody a odpočinku.
+                            <p>Záleží nám na detailu, ať už jde o perfektní cremu na espressu,
+                                vyváženou filtrovanou kávu, nebo domácí dezerty,
+                                které pro vás pečeme s láskou. Ať už hledáte klidné místo
+                                pro práci, nebo kout, kde se můžete setkat s přáteli,
+                                jste u nás vždy srdečně vítáni. Zastavte se, ochutnejte
+                                náš příběh a staňte se součástí naší komunity.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="center flex-col bg-secondary">
+                <div class="container">
+                    <h2 class="section__title text-center mb-7 ">Podzimní novinky</h2>
+                    <div class="grid grid-cols-1 gap-5 md-grid-cols-2 lg-grid-cols-3">
+        
+                        <article class="card text-center mx-auto">
+                            <div class="flex flex-col grow">
+                                <div class="card__media">
+                                    <img class="card__img w-full" src="img/pumpkin-spice-latte.png" alt="Pumpkihn Spice Latté">
+                                </div>
+                                <div class="flex flex-col p-5">
+                                    <h3 class="card__title mb-3">Pumpkin Spice Latté</h3>
+                                        <p class="card__text">Latté s příchutí dýně, se šlehačkou, posypané skořicí.</p>
+                                        <p class="card__price mb-4">99 Kč</p>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <article class="card text-center mx-auto">
+                            <div class="flex flex-col grow">
+                                <div class="card__media">
+                                    <img class="card__img w-full" src="img/pernikove-cappuccino.png" alt="Perníkové cappuccino">
+                                </div>
+                                <div class="flex flex-col p-5">
+                                    <h3 class="card__title mb-3">Perníkové cappuccino</h3>
+                                        <p class="card__text">Cappuccino s příchutí perníčku, se šlehačkou, posypané perníčkovou směsí.</p>
+                                        <p class="card__price mb-4">99 Kč</p>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <article class="card text-center mx-auto">
+                            <div class="flex flex-col grow">
+                                <div class="card__media">
+                                    <img class="card__img w-full" src="img/horke-jablko.png" alt="Horké jablko-nápoj">
+                                </div>
+                                <div class="flex flex-col p-5">
+                                    <h3 class="card__title mb-3">Domácí horké jablko</h3>
+                                        <p class="card__text">Horký jablečný džus, svařený s domácím kořením, posypaný skořicí.</p>
+                                        <p class="card__price mb-4">79 Kč</p>
+                                </div>
+                            </div>
+                        
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer center flex-col text-center gap-4 p-6">
+            <div class="footer__content">
+                <p>&copy; 2025 Kafé Provence</p>
+                <a href="mailto:kafeProvence@gmail.com" class="footer__href">
+                    <p>Email: kafeprovence@gmail.com</p>
+                </a>
+            </div>
+            <div class="footer__disclaimer p-4">
+                <p><strong>⚠️ Tento web byl vytvořen jako studentský zápočtový projekt, veškerý obsah je smyšlený. ⚠️</strong></p>
+                <br><span class="resources">Textové podklady a grafický obsah byly vygenerovány pomocí umělé inteligence (Google Gemini).</span>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

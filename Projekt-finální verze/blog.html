@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kavárna Provence - Blog</title>
+        <link rel="stylesheet" href="src/styles.css">
+    </head>
+    <body>
+        <header class="nav-container">
+            <div class="nav h-full flex justify-between items-center py-4 px-7">
+                <a href="index.html" class="nav__logo">
+                    <img src="img/logo.PNG" alt="logo café Provence">
+                </a>
+                <button id="nav-toggle" class="nav__hamburger block p-4 pointer" aria-label="Otevřít menu">
+                    <span class="hamburger__icon">☰</span>
+                </button>
+                <nav id="nav-menu" class="nav__menu">
+                    <div class="w-full text-right p-4 md-hidden">
+                        <button id="nav-close" class="nav__close pointer">
+                            <span class="close__icon">✕</span>
+                        </button>
+                    </div>
+                    <ul class="nav__links w-full flex flex-col md-flex-row items-center gap-4 list-none md-gap-6">
+                        <li><a href="index.html">DOMŮ</a></li>
+                        <li><a href="menu.html">MENU</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">KONTAKT</a></li>
+                        <li><a href="tel:+420xxxxxxxxx" class="btn btn--nav">REZERVACE</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="center flex-col bg-secondary">
+                <div class="container">
+                    <h2 class="section__title text-center mb-7 ">Nejnovější příspěvky</h2>
+                    <div class="grid grid-cols-1 gap-5 md-grid-cols-2">
+
+                        <article class="card card--blog-featured text-left mx-auto">
+                            <div class="flex flex-col grow">
+                                <div class="card__media">
+                                    <img class="card__img w-full" src="img/bombardino.png" alt="Bombardino">
+                                </div>
+                                <div class="flex flex-col p-5">
+                                    <h4 class="mb-3">Hřejivá legenda ze sjezdovek: Jak připravit pravé Bombardino</h4>
+                                    <a href="blog-articles/bombardino.html" class="btn btn--outline ml-auto mt-auto">Číst dál</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--blog-featured text-left mx-auto">
+                            <div class="flex flex-col grow">
+                                <div class="card__media">
+                                    <img class="card__img w-full" src="img/etiketa-italie.png" alt="Kávová etiketa v Itálii">
+                                </div>
+                                <div class="flex flex-col p-5">
+                                    <h4 class="mb-3">Kávová etiketa ve světě: Jak pít kávu v Itálii, Turecku a Skandinávii</h4>
+                                    <a href="blog-articles/kavova-etiketa.html" class="btn btn--outline ml-auto mt-auto">Číst dál</a>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="center flex-col bg-secondary">
+                <div class="container">
+                    <h2 class="section__title text-center mb-7 "> Více z blogu </h2>
+                    <div class="flex flex-col gap-7">
+
+                         <article class="card card--blog text-left mx-auto">
+                            <div class="flex flex-col grow md-flex md-flex-row md-items-stretch">
+                                <div class="card__media md-flex md-flex-1">
+                                    <img class="card__img w-full md-h-full" src="img/arabica-robusta.png" alt="Zrnka kávy">
+                                </div>
+                                <div class="flex flex-col md-dlex md-flex-2 md-justify-center p-5">
+                                    <h3 class="mb-3">Rozluštění tajemství zrn: Rozdíl mezi Arabikou a Robustou</h3>
+                                    <p class="hidden md-displayed">Proč je jedno zrno ovocné a komplexní, zatímco druhé dodává espresso
+                                         směsím sílu a hořkost? Rozdíl není jen v chuti, ale i v botanice, ceně a obsahu kofeinu,
+                                          který funguje jako přírodní insekticid. Porovnáme dva hlavní kávové druhy, abychom
+                                           vám usnadnili výběr zrn pro váš dokonalý šálek, ať už preferujete jemnost, nebo maximální "kopanec".</p>
+                                    <a href="blog-articles/arabika-robusta.html" class="btn btn--outline ml-auto mt-auto">Číst dál</a>
+                                </div>
+                            </div>
+                         </article>
+
+                        <article class="card card--blog text-left mx-auto">
+                            <div class="flex flex-col grow md-flex md-flex-row md-items-stretch">
+                                <div class="card__media md-flex md-flex-1">
+                                    <img class="card__img w-full md-h-full" src="img/cisteni-kavovaru.png" alt="Čištění kávovaru">
+                                </div>
+                                <div class="flex flex-col md-dlex md-flex-2 md-justify-center p-5">
+                                    <h3 class="mb-3">Jak prodloužit životnost kávovaru: Komplexní průvodce čištěním a odvápněním</h3>
+                                    <p class="hidden md-displayed">Kvalita kávy úzce souvisí s hygienou stroje. Pravidelná a správná údržba kávovaru není 
+                                        jen o záruce a životnosti, ale především o chuti – usazené kávové oleje, vodní kámen a zbytky mléka dokáží
+                                         znehodnotit i ta nejkvalitnější zrna.</p>
+                                    <a href="blog-articles/cisteni-kavovaru.html" class="btn btn--outline ml-auto mt-auto">Číst dál</a>
+                                </div>
+                            </div>
+                        </article>
+
+                         <article class="card card--blog text-left mx-auto">
+                            <div class="flex flex-col grow md-flex md-flex-row md-items-stretch">
+                                <div class="card__media md-flex md-flex-1">
+                                    <img class="card__img w-full md-h-full" src="img/filtrovana-kava.png" alt="Filtrovaná káva">
+                                </div>
+                                <div class="flex flex-col md-dlex md-flex-2 md-justify-center p-5">
+                                    <h3 class="mb-3">Jak na dokonalou filtrovanou kávu doma: Průvodce V60/Chemex</h3>
+                                    <p class="hidden md-displayed">Filtrovaná káva zažívá renesanci, protože 
+                                        jejím cílem je dosáhnout čistoty, jemnosti a plného chuťového 
+                                        profilu zrn. Je to metoda, která nejlépe zvýrazní ovocné a květinové tóny 
+                                        jednodruhových káv. Proces je minimalistický, ale vyžaduje přesné pochopení 
+                                        poměrů a techniky zalévání.</p>
+                                    <a href="blog-articles/filtrovana-kava.html" class="btn btn--outline ml-auto mt-auto">Číst dál</a>
+                                </div>
+                            </div>
+                        </article>
+
+                         <article class="card card--blog text-left mx-auto">
+                            <div class="flex flex-col grow md-flex md-flex-row md-items-stretch">
+                                <div class="card__media md-flex md-flex-1">
+                                    <img class="card__img w-full md-h-full" src="img/dokonale-espresso.png" alt="Espresso">
+                                </div>
+                                <div class="flex flex-col md-dlex md-flex-2 md-justify-center p-5">
+                                    <h3 class="mb-3">Dokonalé espresso v pohodlí domova: Průvodce krok za krokem</h3>
+                                    <p class="hidden md-displayed">Espresso je mnohem víc než jen „silná káva“. Je to koncentrovaný nápoj plný chuti, 
+                                        aroma a textury, který tvoří základ většiny kávových specialit. Jeho příprava je kombinací umění a vědy, 
+                                        která vyžaduje pochopení tlaku, teploty a času. Mnoho lidí si myslí, že k dobrému espressu stačí jen 
+                                        drahý kávovar, ale nejdůležitějším faktorem je ve skutečnosti kvalitní mlýnek, čerstvost suroviny a 
+                                        vaše preciznost.</p>
+                                    <a href="blog-articles/dokonale-espresso.html" class="btn btn--outline ml-auto mt-auto">Číst dál</a>
+                                </div>
+                            </div>
+                         </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer center flex-col text-center gap-4 p-6">
+            <div class="footer__content">
+                <p>&copy; 2025 Kafé Provence</p>
+                <a href="mailto:kafeProvence@gmail.com" class="footer__href">
+                    <p>Email: kafeprovence@gmail.com</p>
+                </a>
+            </div>
+            <div class="footer__disclaimer p-4">
+                <p><strong>⚠️ Tento web byl vytvořen jako studentský zápočtový projekt, veškerý obsah je smyšlený. ⚠️</strong></p>
+                <br><span class="resources">Textové podklady a grafický obsah byly vygenerovány pomocí umělé inteligence (Google Gemini).</span>
+            </div>
+         </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <title>Kavárna Provence - Menu</title>
+        <link rel="stylesheet" href="src/styles.css">
+    </head>
+    <body>
+        <header class="nav-container">
+            <div class="nav h-full flex justify-between items-center py-4 px-7">
+                <a href="index.html" class="nav__logo">
+                    <img src="img/logo.PNG" alt="logo café Provence">
+                </a>
+                <button id="nav-toggle" class="nav__hamburger block p-4 pointer" aria-label="Otevřít menu">
+                    <span class="hamburger__icon">☰</span>
+                </button>
+                <nav id="nav-menu" class="nav__menu">
+                    <div class="w-full text-right p-4 md-hidden">
+                        <button id="nav-close" class="nav__close pointer">
+                            <span class="close__icon">✕</span>
+                        </button>
+                    </div>
+                    <ul class="nav__links w-full flex flex-col md-flex-row items-center gap-4 list-none md-gap-6">
+                        <li><a href="index.html">DOMŮ</a></li>
+                        <li><a href="menu.html">MENU</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">KONTAKT</a></li>
+                        <li><a href="tel:+420xxxxxxxxx" class="btn btn--nav">REZERVACE</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+         <main>
+            <section class="hero hero--small w-full relative">
+                 <div class="hero__overlay center absolute w-full h-full">
+                    <div class="hero__content center flex-col gap-5 text-center">
+                        <h1 class="hero__title">MENU</h1>
+                    </div>
+                 </div>
+            </section>
+
+            <section class="center flex-col bg-primary">
+                <div class="container container--menu">
+                        <h2 class="section__title text-center mt-7 mb-7 ">STÁLÁ NABÍDKA</h2>
+                    <div class="grid grid-cols-1 lg-grid-cols-2 gap-7">
+                        
+                        <div class="flex flex-col gap-5">
+                                <h3 class="text-center mb-3">Káva</h3>
+                                <ul class="list-none flex flex-col gap-4">
+                                    <li class="flex justify-between">
+                                        <div class="flex flex-col">
+                                            <div class="menu-item__name">Ristretto (20ml)</div>
+                                            <p class="menu-item__info">Krátké a koncentrované espresso s váraznou chutí.</p>
+                                        </div>
+                                        <p class="menu-item__price">55</p>
+                                    </li>
+                                    <li class="flex justify-between">
+                                        <div class="flex flex-col">
+                                            <div class="menu-item__name">Espresso (30ml)</div>
+                                            <p class="menu-item__info">Intenzivní kávová chuť v malém šálku.</p>
+                                        </div>
+                                        <p class="menu-item__price">59</p>
+                                    </li>
+                                    <li class="flex justify-between">
+                                        <div class="flex flex-col">
+                                            <div class="menu-item__name">Espresso Lungo (70 ml)</div>
+                                            <p class="menu-item__info">Espresso jemně prodloužené horkou vodou (40 ml) pro lehčí, ale stále charakteristickou chuť.</p>
+                                        </div>
+                                        <p class="menu-item__price">65</p>
+                                    </li>
+                                    <li class="flex justify-between">
+                                        <div class="flex flex-col">
+                                            <div class="menu-item__name">Double Espresso (60 ml)</div>
+                                            <p class="menu-item__info">Dvojitá dávka našeho pečlivě připraveného espressa.</p>
+                                        </div>
+                                        <p class="menu-item__price">55</p>
+                                    </li>
+                                    <li class="flex justify-between">
+                                        <div class="flex flex-col">
+                                            <div class="menu-item__name">Americano (150 ml)</div>
+                                            <p class="menu-item__info">Espresso doplněné větším objemem horké vody (120 ml), které dává vyniknout jemnějším tónům naší kávy.</p>
+                                        </div>
+                                        <p class="menu-item__price">69</p>
+                                    </li>
+                                    <li class="flex justify-between">
+                                        <div class="flex flex-col">
+                                            <div class="menu-item__name">Cappuccino (180 ml)</div>
+                                            <p class="menu-item__info">Tradiční italská klasika: espresso spojené se sametovou, krémovou mléčnou mikropěnou.</p>
+                                        </div>
+                                        <p class="menu-item__price">69</p>
+                                    </li>
+                                    <li class="flex justify-between">
+                                        <div class="flex flex-col">
+                                            <div class="menu-item__name">Caffè Latte (250 ml)</div>
+                                            <p class="menu-item__info">Espresso s vetším objemem horkého mléka a lehkou vrstvou mléčné pěny.</p>
+                                        </div>
+                                        <p class="menu-item__price">75</p>
+                                    </li>
+                                    <li class="flex justify-between">
+                                        <div class="flex flex-col">
+                                            <div class="menu-item__name">Flat White (160 ml)</div>
+                                            <p class="menu-item__info">Dvojitá dávka našeho pečlivě připraveného espressa s mléčnou mikropěnou.</p>
+                                        </div>
+                                        <p class="menu-item__price">85</p>
+                                    </li>
+                                    </ul>
+                        </div>
+                        
+                        <div class="flex flex-col gap-5">
+                                <h3 class="text-center mb-3">Ledová káva & Speciality</h3>
+                                <ul class="list-none flex flex-col gap-4">
+                                    <li class="flex justify-between">
+                                        <div class="flex flex-col">
+                                            <div class="menu-item__name">Iced Caffè Latte (300 ml)</div>
+                                            <p class="menu-item__info">Osvěžující espresso spojené se studeným mlékem a kostkami ledu.</p>
+                                        </div>
+                                        <p class="menu-item__price">89</p>
+                                    </li>
+                                    <li class="flex justify-between">
+                                        <div class="flex flex-col">
+                                            <div class="menu-item__name">Iced Americano (300 ml)</div>
+                                            <p class="menu-item__info">Naše silné espresso zchlazené filtrovanou vodou a ledem.</p>
+                                        </div>
+                                        <p class="menu-item__price">85</p>
+                                    </li>
+                                    <li class="flex justify-between">
+                                        <div class="flex flex-col">
+                                            <div class="menu-item__name">Espresso Tonic (250 ml)</div>
+                                            <p class="menu-item__info">Naše espresso s tonikem dle výběru (Classic / Rose / Zázvor).</p>
+                                        </div>
+                                        <p class="menu-item__price">89</p>
+                                    </li>
+                                    <li class="flex justify-between">
+                                        <div class="flex flex-col">
+                                            <div class="menu-item__name">Cold Brew (200 ml)</div>
+                                            <p class="menu-item__info">Pomalu za studena extrahovaná káva s přirozeně sladkou a jemnou chutí.</p>
+                                        </div>
+                                        <p class="menu-item__price">85</p>
+                                    </li>
+                                    <li class="flex justify-between">
+                                        <div class="flex flex-col">
+                                            <div class="menu-item__name">Ledová káva (300 ml)</div>
+                                            <p class="menu-item__info">Naše espresso s mlékem schlazené ledem, s kopečkem vanilkové zmrzliny a šlehačkou.</p>
+                                        </div>
+                                        <p class="menu-item__price">99</p>
+                                    </li>
+                                    <li class="flex justify-between">
+                                        <div class="flex flex-col">
+                                            <div class="menu-item__name">Frappé (300 ml)</div>
+                                            <p class="menu-item__info">Naše espresso rozmixované s mlékem a ledem do hladké směsi.</p>
+                                        </div>
+                                        <p class="menu-item__price">95</p>
+                                    </li>
+                                    </ul>
+                        </div>
+                        
+                        <div class="flex flex-col gap-5">
+                                <h3 class="text-center mb-3">Čaje & Horké nápoje</h3>
+                                <ul class="list-none flex flex-col gap-4">
+                                    <li class="flex justify-between">
+                                        <div class="flex flex-col">
+                                            <div class="menu-item__name">Horká čokoláda (Mléčná / Hořká / Oříšková)</div>
+                                            <p class="menu-item__info">Hustá a sametová čokoláda rozpuštěná v horkém mléce, ozdobená šlehačkou.</p>
+                                        </div>
+                                        <p class="menu-item__price">79</p>
+                                    </li>
+                                    <li class="flex justify-between">
+                                        <div class="flex flex-col">
+                                            <div class="menu-item__name">Čaj z čerstvého zázvoru (0,4l)</div>
+                                            <p class="menu-item__info">Hřejivý nápoj z čerstvě nastrouhaného zázvoru, podávaný s medem a citronem.</p>
+                                        </div>
+                                        <p class="menu-item__price">65</p>
+                                    </li>
+                                    <li class="flex justify-between">
+                                        <div class="flex flex-col">
+                                            <div class="menu-item__name">Čaj z čerstvé máty (0,4l)</div>
+                                            <p class="menu-item__info">Osvěžující a uklidňující výluh z čerstvých lístků máty, skvělý pro trávení.</p>
+                                        </div>
+                                        <p class="menu-item__price">65</p>
+                                    </li>
+                                    <li class="flex justify-between">
+                                        <div class="flex flex-col">
+                                            <div class="menu-item__name">Matcha Latte (250 ml)</div>
+                                            <p class="menu-item__info">Jemně mletý japonský zelený čaj matcha spojený s našlehaným mlékem.</p>
+                                        </div>
+                                        <p class="menu-item__price">95</p>
+                                    </li>
+                                    <li class="flex justify-between">
+                                        <div class="flex flex-col">
+                                            <div class="menu-item__name">Chai Latte (250 ml)</div>
+                                            <p class="menu-item__info">Kořeněná a sladká směs černého čaje, kardamomu a skořice s horkým mlékem.</p>
+                                        </div>
+                                        <p class="menu-item__price">95</p>
+                                    </li>
+                                </ul>
+                        </div>
+                        
+                        <div class="flex flex-col gap-5">
+                            <h3 class="text-center mb-3">Limonády & Nealko</h3>
+                            <ul class="list-none flex flex-col gap-4">
+                                <li class="flex justify-between">
+                                    <div class="flex flex-col">
+                                        <div class="menu-item__name">Domácí limonáda dle nabídky (0,5 l)</div>
+                                        <p class="menu-item__info">Osvěžující limonáda z našich vlastních sirupů a čerstvého ovoce (zeptejte se na dnešní příchuť).</p>
+                                    </div>
+                                    <p class="menu-item__price">79</p>
+                                </li>
+                                <li class="flex justify-between">
+                                    <div class="flex flex-col">
+                                        <div class="menu-item__name">Domácí ledový čaj (0,5 l)</div>
+                                        <p class="menu-item__info">Vlastnoručně louhovaný a příjemně vychlazený čaj, lehce oslazený (dle denní nabídky).</p>
+                                    </div>
+                                    <p class="menu-item__price">79</p>
+                                </li>
+                                <li class="flex justify-between">
+                                    <div class="flex flex-col">
+                                        <div class="menu-item__name">Džus (0,2 l)</div>
+                                        <p class="menu-item__info">Pomeranč / Jablko / Hruška / Multivitamín / Jahoda / Černý rybíz</p>
+                                    </div>
+                                    <p class="menu-item__price">49</p>
+                                </li>
+                                <li class="flex justify-between">
+                                    <div class="flex flex-col">
+                                        <div class="menu-item__name">Karafa vody s citronem a mátou (1 l)</div>
+                                    </div>
+                                    <p class="menu-item__price">45</p>
+                                </li>
+                                <li class="flex justify-between">
+                                    <div class="flex flex-col">
+                                        <div class="menu-item__name">Kohoutková voda s citronem (0,3 l)</div>
+                                    </div>
+                                    <p class="menu-item__price">19</p>
+                                </li>
+                                <li class="flex justify-between">
+                                    <div class="flex flex-col">
+                                        <div class="menu-item__name">Coca-Cola / Coca-Cola Zero (0,33 l lahev)</div>
+                                    </div>
+                                    <p class="menu-item__price">39</p>
+                                </li>
+                            </ul>
+                        </div>   
+                    </div> 
+                </div>
+            </section>
+        </main>
+       <footer class="footer center flex-col text-center gap-4 p-6">
+            <div class="footer__content">
+                <p>&copy; 2025 Kafé Provence</p>
+                <a href="mailto:kafeProvence@gmail.com" class="footer__href">
+                    <p>Email: kafeprovence@gmail.com</p>
+                </a>
+            </div>
+            <div class="footer__disclaimer p-4">
+                <p><strong>⚠️ Tento web byl vytvořen jako studentský zápočtový projekt, veškerý obsah je smyšlený. ⚠️</strong></p>
+                <br><span class="resources">Textové podklady a grafický obsah byly vygenerovány pomocí umělé inteligence (Google Gemini).</span>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

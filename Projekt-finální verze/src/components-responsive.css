@@ -1,0 +1,82 @@
+@layer components-responsive {
+    @media (min-width: 768px) {
+    /********************************************************************/
+        /* navigation - md */
+        #nav-toggle,       
+        #nav-close,        
+        .md-hidden {
+            display: none !important; 
+        }
+        .nav__menu {
+            position: static;
+            width: auto; 
+            height: auto; 
+            max-width: none;
+            right: auto;
+            background-color: transparent;
+            box-shadow: none;
+            transition: none;
+            display: block; 
+        }
+        
+        .nav__links a {
+            padding: var(--space-2);
+            color: var(--color-primary-text);
+            width: auto;
+            text-align: center;
+        }
+        
+    /********************************************************************/
+        /* split-content - md */
+        .split-content__media {
+            max-height: calc(var(--grid-unit) * 62.5);
+            flex-shrink: 0; 
+        }
+        .split-content__img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+    /********************************************************************/
+        /* card - md */
+        .card--blog {
+            max-width: 100%;
+        }
+        .card--blog .card__media {
+            flex-shrink: 0; 
+            min-height: auto;
+        }
+        .card--blog .card__img {
+            object-fit: cover;
+        } 
+    /********************************************************************/
+        /* button - md */
+        .btn--nav {
+            background-color: transparent;
+            border: 2px solid var(--color-bg-light);
+            color: var(--color-primary); 
+        }
+        
+        .btn--nav:hover {
+            background-color:var(--color-bg-light);
+            color: var(--color-text) !important;
+        }
+    /********************************************************************/
+        /* contact-map - md */
+        .contact__map {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    @media (min-width: 1200px) {
+    /********************************************************************/
+        /* hero - lg */
+        .hero--small {
+            background-image: url(../img/menu-pc.png);
+            height: 30vh;
+        }
+    }
+}
